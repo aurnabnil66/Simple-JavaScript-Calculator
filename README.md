@@ -1,3 +1,1 @@
-# Simple-JavaScript-Calculator
-I've made a simple calculator. This calculator is created using html,css &amp; javaScript. I've followed a youtube channel for the idea of it. 
-Link : https://youtu.be/Q6FkM7CIKbc
+![x](https://user-images.githubusercontent.com/105810364/184309599-5d067736-136e-423f-bf44-3b493ef77c96.png)
