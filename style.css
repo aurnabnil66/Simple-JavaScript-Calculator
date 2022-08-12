@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #7f8c8d, #6e8083, #5e737a, #4f6771, #425a69, #3c5364, #374d5f, #32465a, #304457, #2f4255, #2d4052, #2c3e50);
+}
+
+.container{
+    position: relative;
+    min-width: 300px;
+    min-height: 400px;
+    padding: 40px 30px 30px;
+    border-radius: 20px;
+    background: #616a6b;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.calculator{
+    position: relative;
+    display: grid;
+}
+
+.calculator .value{
+    position: relative;
+    grid-column: span 4;
+    height: 100px;
+    left: 10px;
+    width: calc(100% - 20px);
+    border: none;
+    outline: none;
+    background: #edbb99;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
+    text-align: right;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.calculator span{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    background: linear-gradient(180deg, #f0f3f4, #dde1e2, #cacfd1, #b8bdc0, #a6acaf);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 0.75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    color: #000;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.calculator span::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    bottom: 8px;
+    right: 8px;
+    background: linear-gradient(180deg, #b8bdc0, #a6acaf);
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.1),
+    10px 5px 10px rgba(0, 0, 0, 0.15);
+    border-left: 1px solid #a6acaf;
+    border-bottom: 1px solid #a6acaf;
+    border-top: 1px solid #a6acaf; 
+}
+
+.calculator span:active{
+    filter: brightness(1.5);
+}
+
+.calculator span i{
+    position: relative;
+    font-style: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.calculator .clear{
+    grid-column: span 2;
+    width: 180px;
+    background: #283747;
+    color: #fff;
+}
+
+.calculator .clear::before{
+    background: linear-gradient(90deg, #283747, #263544, #243342, #23313f, #212f3d);
+    border-left: 1px solid #17202a;
+    border-bottom: 1px solid #17202a;
+    border-top: 1px solid #17202a;
+}
+
+.calculator .plus{
+    grid-row: span 2;
+    height: 180px;
+}
+
+.calculator .equal{
+    background:  #48c9b0;
+    color: white;
+}
+
+.calculator .equal::before{
+    background-image: linear-gradient(to right top, #48c9b0, #3fc6ab, #35c3a6, #29bfa1, #1abc9c);
+    border-left: 1px solid #1abc9c;
+    border-bottom: 1px solid #1abc9c;
+    border-top: 1px solid #1abc9c;
+}
+
